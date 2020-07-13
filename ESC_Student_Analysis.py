@@ -111,8 +111,7 @@ class total_period_analysis:
 		self.ws.cell(row=11, column=self.output_col).value = self.partipcateIn4Class
 
 	def advancedAnalysis(self):
-		global_all_students.sort()
-		print(global_all_students)
+
 		total_period_student_names_no_duplicates = list(set(total_period_student_names))
 		for x in total_period_student_names_no_duplicates:
 			if global_all_students.count(str(x)) >= 3:
